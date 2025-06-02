@@ -1,0 +1,40 @@
+
+@font-face {
+    font-family: 'Nocaut';
+    src: url('fonts/Nocaut-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Beauty';
+    src: url('fonts/BeautyDemo.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'Nocaut', sans-serif;
+}
+
+#mensagem {
+    font-family: 'Beauty', cursive;
+    font-size: 1.3rem;
+}
+
+.coraçao {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-image: url('imagens/coracao.png');
+    background-size: cover;
+    animation: flutuar 8s linear infinite;
+    z-index: 9999;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
